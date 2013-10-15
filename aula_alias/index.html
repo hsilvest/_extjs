@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../resources/css/ext-all.css">
+	<script type="text/javascript" src="../ext-all.js"></script>
+
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+Ext.define("Aula08.componente.MeuBotao",{
+		extend: "Ext.button.Button",
+		alias: "widget.meubotao",
+			//text: "MeuBotao",
+		renderTo: Ext.getBody(),
+		//override
+		initComponent: function(){
+			this.text = "MeuBotao"
+			this.callParent();
+		}
+	});
+
+	Ext.onReady(function(){
+		Ext.widget("meubotao",{
+			renderTo: Ext.getBody()
+		})
+
+	Ext.create('Ext.window.Window', {
+			title: 'Hello',
+			height: 200,
+			width: 400,
+			items: {  
+			    xtype: 'button',
+			    text: 'botao'
+		    }
+		}).show();
+	
+	});
+</script>
+</html>
