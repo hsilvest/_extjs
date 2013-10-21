@@ -1,0 +1,23 @@
+{
+        "id": 1,
+        "nome": "Henrique",
+        "sobrenome": "Silvestre",
+        "telefones": [
+        	{
+		"id": 12,
+		"ddd": "31",
+		"numero": "3234-253",
+        	},
+	{
+		"id": 13,
+		"ddd": "21",
+		"numero": "1233-513",
+        	},
+        ],
+        "endereco": {
+		"id": 14,
+		"logradouro": "rua 21",
+		"numero": "12",
+		"complemento" : "ap 2"
+        }
+}
